@@ -1,0 +1,1181 @@
+
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منهج اللغة العربية للصف الأول الإعدادي - الترم الثاني 2024/2025</title>
+    <meta name="description" content="موقع تفاعلي لشرح منهج اللغة العربية للصف الأول الإعدادي مع تدريبات وامتحانات تفاعلية">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Reem+Kufi:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
+        
+        :root {
+            --primary-color: #8B4513;
+            --secondary-color: #F5DEB3;
+            --accent-color: #CD853F;
+            --text-dark: #333333;
+            --text-light: #F8F8FF;
+            --background-light: #FFF8E7;
+            --background-dark: #5D5D5D;
+        }
+        
+        body {
+            font-family: 'Amiri', serif;
+            background-color: var(--background-light);
+            color: var(--primary-color);
+        }
+                h1, h2, h3, h4, h5, h6 {
+            font-family: 'Reem Kufi', sans-serif;
+        }
+
+        .header {
+            background-color: var(--secondary-color);
+            border-bottom: 2px solid var(--accent-color);
+        }
+        
+        .footer {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+        }
+        
+        .main-title {
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+        
+        .hero-section {
+            background-color: var(--background-dark);
+            color: var(--text-light);
+            padding: 3rem 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+        
+        .feature-card {
+            background-color: white;
+            border: 1px solid var(--accent-color);
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-icon {
+            color: var(--primary-color);
+            font-size: 2rem;
+        }
+        
+        .button-primary {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        
+        .button-primary:hover {
+            background-color: var(--accent-color);
+        }
+        
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .progress-bar {
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            height: 10px;
+        }
+        
+        .progress {
+            background-color: var(--accent-color);
+            height: 10px;
+            border-radius: 10px;
+        }
+        
+        .content-box {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+        
+        .tab-button {
+            padding: 0.75rem 1rem;
+            background-color: #f0f0f0;
+            border: none;
+            border-radius: 4px 4px 0 0;
+            margin-right: 2px;
+        }
+        
+        .tab-button.active {
+            background-color: white;
+            border-bottom: 3px solid var(--accent-color);
+        }
+        
+        .tab-content {
+            display: none;
+            padding: 1.5rem;
+            background-color: white;
+            border-radius: 0 0 4px 4px;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .fullscreen-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+            overflow: auto;
+        }
+        
+        .modal-content {
+            margin: 5% auto;
+            padding: 20px;
+            width: 90%;
+            max-width: 800px;
+            background-color: white;
+            border-radius: 8px;
+        }
+        
+        .close-button {
+            color: #aaa;
+            float: left;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .table-container {
+            overflow-x: auto;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: right;
+        }
+        
+        th {
+            background-color: var(--secondary-color);
+        }
+        
+        .quiz-container {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+        
+        .question {
+            margin-bottom: 1.5rem;
+        }
+        
+        .options label {
+            display: block;
+            margin: 8px 0;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .options label:hover {
+            background-color: #f5f5f5;
+        }
+        
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+            }
+            .navbar-items {
+                margin-top: 1rem;
+                width: 100%;
+                text-align: center;
+            }
+            .feature-container {
+                flex-direction: column;
+            }
+            .feature-card {
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header py-4">
+        <div class="container mx-auto px-4">
+            <nav class="navbar flex justify-between items-center">
+                <div class="text-2xl main-title">اللغة العربية</div>
+                <div class="navbar-items flex space-x-4 space-x-reverse">
+                    <a href="#home" class="mx-3 hover:text-accent-color">الرئيسية</a>
+                    <a href="#curriculum" class="mx-3 hover:text-accent-color">المنهج الدراسي</a>
+                    <a href="#exercises" class="mx-3 hover:text-accent-color">اختبر نفسك</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="container mx-auto px-4">
+        <div class="hero-section text-center">
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">منهج اللغة العربية - الصف الأول الإعدادي</h1>
+            <p class="text-xl mb-4">الترم الثاني 2024/2025</p>
+            <p class="text-lg mb-8">مرحباً بك في موقعنا التفاعلي لشرح منهج اللغة العربية للصف الأول الإعدادي. استمتع برحلة ممتعة في عالم اللغة العربية الجميل.</p>
+            <a href="#curriculum" class="button-primary inline-block">استكشف المنهج</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="container mx-auto px-4 py-8">
+        <h2 class="section-title text-2xl md:text-3xl text-center mb-8">مميزات الموقع</h2>
+        <p class="text-lg text-center mb-8">يقدم موقعنا العديد من الميزات التي تساعدك على فهم منهج اللغة العربية بطريقة سهلة وممتعة:</p>
+        
+        <div class="feature-container flex flex-wrap justify-between">
+            <div class="feature-card w-full md:w-[32%] p-6 mb-6">
+                <div class="text-center">
+                    <i class="fas fa-book feature-icon mb-4"></i>
+                    <h3 class="text-xl font-bold mb-4">شرح المنهج</h3>
+                    <p>شرح مفصل لجميع دروس المنهج بأسلوب سهل وبسيط يناسب جميع الطلاب.</p>
+                </div>
+            </div>
+            
+            <div class="feature-card w-full md:w-[32%] p-6 mb-6">
+                <div class="text-center">
+                    <i class="fas fa-brain feature-icon mb-4"></i>
+                    <h3 class="text-xl font-bold mb-4">تدريبات تفاعلية</h3>
+                    <p>مجموعة متنوعة من التدريبات التفاعلية لتثبيت المعلومات وتنمية المهارات اللغوية.</p>
+                </div>
+            </div>
+            
+            <div class="feature-card w-full md:w-[32%] p-6 mb-6">
+                <div class="text-center">
+                    <i class="fas fa-clipboard-check feature-icon mb-4"></i>
+                    <h3 class="text-xl font-bold mb-4">اختبارات متنوعة</h3>
+                    <p>اختبارات شاملة لقياس مستوى الطالب وتحديد نقاط القوة والضعف لديه.</p>
+                </div>
+            </div>
+
+            <div class="feature-card w-full md:w-[32%] p-6 mb-6">
+                <div class="text-center">
+                    <i class="fas fa-chart-line feature-icon mb-4"></i>
+                    <h3 class="text-xl font-bold mb-4">متابعة تقدمك</h3>
+                    <p>تتبع مستوى تقدمك في المنهج ومعرفة ما تم إنجازه وما هو متبقي.</p>
+                </div>
+            </div>
+            
+            <div class="feature-card w-full md:w-[32%] p-6 mb-6">
+                <div class="text-center">
+                    <i class="fas fa-laptop feature-icon mb-4"></i>
+                    <h3 class="text-xl font-bold mb-4">تعلم تفاعلي</h3>
+                    <p>أدوات تفاعلية لجعل عملية التعلم أكثر متعة وفعالية.</p>
+                </div>
+            </div>
+            
+            <div class="feature-card w-full md:w-[32%] p-6 mb-6">
+                <div class="text-center">
+                    <i class="fas fa-video feature-icon mb-4"></i>
+                    <h3 class="text-xl font-bold mb-4">فيديوهات تعليمية</h3>
+                    <p>فيديوهات موصى بها لفهم أعمق للمواضيع المختلفة في المنهج.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Price -->
+    <section class="container mx-auto px-4 py-4 mb-8">
+        <div class="bg-yellow-100 p-6 rounded-md text-center border-2 border-yellow-400">
+            <h3 class="text-2xl font-bold mb-2">سعر المذكرة</h3>
+            <p class="text-lg mb-2">فقط <span class="text-2xl font-bold text-green-600">20 جنيه</span> للحصول على المذكرة الشاملة</p>
+            <p>استثمار بسيط لتحقيق أعلى الدرجات في مادة اللغة العربية!</p>
+        </div>
+    </section>
+
+    <!-- Progress Tracking -->
+    <section class="container mx-auto px-4 py-4 mb-8">
+        <h2 class="section-title text-2xl">تقدمك في المنهج</h2>
+        <div class="content-box">
+            <div class="mb-6">
+                <div class="flex justify-between mb-2">
+                    <span>النحو</span>
+                    <span>60%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 60%"></div>
+                </div>
+            </div>
+            
+            <div class="mb-6">
+                <div class="flex justify-between mb-2">
+                    <span>البلاغة</span>
+                    <span>40%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 40%"></div>
+                </div>
+            </div>
+            
+            <div class="mb-6">
+                <div class="flex justify-between mb-2">
+                    <span>التعبيرات</span>
+                    <span>75%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%"></div>
+                </div>
+            </div>
+            
+            <div>
+                <div class="flex justify-between mb-2">
+                    <span>الاختبارات</span>
+                    <span>30%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 30%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum Section -->
+    <section id="curriculum" class="container mx-auto px-4 py-8">
+        <h2 class="section-title text-2xl md:text-3xl text-center mb-8">المنهج الدراسي</h2>
+        
+        <div class="mb-8">
+            <div class="flex border-b">
+                <button class="tab-button active" onclick="openTab(event, 'grammar')">النحو</button>
+                <button class="tab-button" onclick="openTab(event, 'rhetoric')">البلاغة</button>
+                <button class="tab-button" onclick="openTab(event, 'expressions')">التعبيرات</button>
+                <button class="tab-button" onclick="openTab(event, 'vocabulary')">المعاني والمفردات</button>
+            </div>
+            
+            <!-- Grammar Tab -->
+            <div id="grammar" class="tab-content content-box active">
+                <h3 class="text-xl font-bold mb-4">النحو</h3>
+                
+                <div class="accordion">
+                    <!-- النعت -->
+                    <div class="mb-4">
+                        <div class="accordion-header bg-gray-100 p-3 rounded cursor-pointer flex justify-between items-center" onclick="toggleAccordion(this)">
+                            <h4 class="font-bold">1. النعت</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content hidden p-4 border border-gray-200 rounded-b">
+                            <p class="mb-4"><strong>شرح الدرس:</strong></p>
+                            <p class="mb-4">النعت (أو الصفة) هو أحد التوابع في علم النحو في اللغة العربية، ويُقصد بالتوابع هي الأسماء التي تتبع ما يأتي قبلها في الإعراب. يأتي النعت في الجملة لبيان صفة في المنعوت (الموصوف).</p>
+                            
+                            <p class="mb-4"><strong>أنواع النعت:</strong></p>
+                            <ul class="list-disc list-inside mb-4">
+                                <li>النعت المفرد: وهو ما ليس جملة ولا شبه جملة، بل هو كلمة واحدة تصف المنعوت الذي يسبقها.</li>
+                            </ul>
+                            
+                            <p class="mb-4"><strong>شروط المطابقة بين النعت والمنعوت:</strong> عندما يكون الحديث عن العاقل، يجب أن تتوافر أربعة شروط:</p>
+                            <ul class="list-disc list-inside mb-4">
+                                <li>التعريف أو التنكير</li>
+                                <li>النوع (مذكر أو مؤنث)</li>
+                                <li>العدد (مفرد - مثنى - جمع)</li>
+                                <li>الإعراب (رفع - نصب - جر)</li>
+                            </ul>
+                            
+                            <p class="mb-4"><strong>أما في حالة غير العاقل، فيكفي التطابق في التعريف أو التنكير والإعراب.</strong></p>
+                            
+                            <p class="mb-4"><strong>أمثلة:</strong></p>
+                            <ul class="list-disc list-inside mb-4">
+                                <li>الرجلُ المهذبُ تقيٌ. (النعت: المهذب)</li>
+                                <li>رأيتُ رجلاً معطاءً كريماً. (النعت: معطاء، كريماً)</li>
+                                <li>المرأةُ الكريمةُ تقيةٌ. (النعت: الكريمة)</li>
+                                <li>رأيتُ امرأةً طيبةً رحيمةً. (النعت: طيبة، رحيمة)</li>
+                                <li>رأيتُ الجنديَ الشجاعَ. (النعت: الشجاع)</li>
+                            </ul>
+                            
+                            <button class="button-primary mt-4" onclick="openFullscreen('نعت-fullscreen')">عرض على كامل الشاشة</button>
+                            
+                            <div class="mt-6">
+                                <h5 class="font-bold mb-2">أسئلة:</h5>
+                                <div class="quiz-container">
+                                    <div class="question">
+                                        <p class="mb-2">1. اختر النعت المناسب مما بين القوسين:</p>
+                                        <p>يحب الله المؤمنَ ______ (الصادق - الصادقة - الصادقون)</p>
+                                        <div class="options mt-2">
+                                            <label>
+                                                <input type="radio" name="q1" value="الصادق"> الصادق
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="q1" value="الصادقة"> الصادقة
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="q1" value="الصادقون"> الصادقون
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="question">
+                                        <p class="mb-2">2. استخرج النعت من الجملة الآتية وبين المنعوت:</p>
+                                        <p>يشهد العالم تطوراً علمياً كبيراً.</p>
+                                        <textarea class="w-full p-2 border border-gray-300 rounded mt-2" rows="2"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- الفعل المبني للمعلوم والفعل المبني للمجهول -->
+                    <div class="mb-4">
+                        <div class="accordion-header bg-gray-100 p-3 rounded cursor-pointer flex justify-between items-center" onclick="toggleAccordion(this)">
+                            <h4 class="font-bold">2. الفعل المبني للمعلوم والفعل المبني للمجهول</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content hidden p-4 border border-gray-200 rounded-b">
+                            <p class="mb-4"><strong>شرح الدرس:</strong></p>
+                            <p class="mb-4">الفعل المبني للمعلوم: هو الفعل الذي يكون فيه الفاعل ظاهراً ومعروفاً في الجملة، حيث يقوم بالفعل ويكون وجوده واضحاً في تركيب الجملة.</p>
+                            
+                            <p class="mb-4">الفعل المبني للمجهول: هو الفعل الذي يُبنى بحيث يكون الفاعل غير ظاهر أو محذوف من الجملة؛ إذ لا يمكن تحديد من قام بالفعل، ويتم تحويل المفعول به في الجملة الفعلية المبنية للمعلوم إلى نائب فاعل.</p>
+                            
+                            <p class="mb-4"><strong>طريقة بناء الفعل للمجهول:</strong></p>
+                            <ul class="list-disc list-inside mb-4">
+                                <li>حذف الفاعل من الجملة.</li>
+                                <li>تحديد المفعول به الذي تحمل عليه فعل الجملة في المبني للمعلوم.</li>
+                                <li>تحويل المفعول به إلى نائب فاعل عن طريق تغيير علامته الإعرابية (من النصب إلى الرفع).</li>
+                                <li>تعديل الفعل نفسه ليتوافق مع البناء المبني للمجهول:
+                                    <ul class="list-disc list-inside mr-6 mt-2">
+                                        <li>في الماضي: يُضم أوله ويُكسر ما قبل آخره.</li>
+                                        <li>في المضارع: يُضم أوله ويُفتح ما قبل آخره.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            
+                            <p class="mb-4"><strong>أمثلة:</strong></p>
+                            <ul class="list-disc list-inside mb-4">
+                                <li>الفعل المبني للمعلوم: كتبَ الطالبُ الدرسَ.</li>
+                                <li>الفعل المبني للمجهول: كُتِبَ الدرسُ. (نائب الفاعل: الدرسُ)</li>
+                            </ul>
+                            
+                            <button class="button-primary mt-4" onclick="openFullscreen('فعل-fullscreen')">عرض على كامل الشاشة</button>
+                            
+                            <div class="mt-6">
+                                <h5 class="font-bold mb-2">أسئلة:</h5>
+                                <div class="quiz-container">
+                                    <div class="question">
+                                        <p class="mb-2">1. حوّل الجملة التالية من المبني للمعلوم إلى المبني للمجهول:</p>
+                                        <p>يقرأ الطالب الكتاب.</p>
+                                        <textarea class="w-full p-2 border border-gray-300 rounded mt-2" rows="2"></textarea>
+                                    </div>
+                                    
+                                    <div class="question">
+                                        <p class="mb-2">2. اختر الإجابة الصحيحة من بين القوسين:</p>
+                                        <p>نائب الفاعل في جملة "تُمنح الجوائز للمتفوقين" هو:</p>
+                                        <div class="options mt-2">
+                                            <label>
+                                                <input type="radio" name="q2" value="الجوائز"> الجوائز
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="q2" value="للمتفوقين"> للمتفوقين
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="q2" value="تقديراً"> تقديراً
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- نائب الفاعل -->
+                    <div class="mb-4">
+                        <div class="accordion-header bg-gray-100 p-3 rounded cursor-pointer flex justify-between items-center" onclick="toggleAccordion(this)">
+                            <h4 class="font-bold">3. نائب الفاعل</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content hidden p-4 border border-gray-200 rounded-b">
+                            <p class="mb-4"><strong>شرح الدرس:</strong></p>
+                            <p class="mb-4">نائب الفاعل هو العنصر الذي يحل محل الفاعل في الجملة المبنية للمجهول عندما يُحذف الفاعل الأصلي.</p>
+                            
+                            <p class="mb-4"><strong>أحكام نائب الفاعل:</strong></p>
+                            <ul class="list-disc list-inside mb-4">
+                                <li>يُرفع دائماً بعلامة الرفع المناسبة (عادة الضمة للمفرد).</li>
+                                <li>يتفق مع الفعل المبني للمجهول في النوع والعدد.</li>
+                                <li>يأتي بعد الفعل المبني للمجهول مباشرة.</li>
+                            </ul>
+                            
+                            <p class="mb-4"><strong>صور نائب الفاعل:</strong></p>
+                            <ul class="list-disc list-inside mb-4">
+                                <li>اسم ظاهر: كُتب الدرسُ.</li>
+                                <li>ضمير متصل: كُتبت (التاء نائب فاعل).</li>
+                                <li>ضمير مستتر: كُتِبت الواجبات (نائب الفاعل ضمير مستتر تقديره هي).</li>
+                                <li>اسم إشارة: كُرِّم هذا في الحفل.</li>
+                                <li>اسم موصول: كُرِّم الذي اجتهد.</li>
+                            </ul>
+                            
+                            <button class="button-primary mt-4" onclick="openFullscreen('نائب-fullscreen')">عرض على كامل الشاشة</button>
+                            
+                            <div class="mt-6">
+                                <h5 class="font-bold mb-2">أسئلة:</h5>
+                                <div class="quiz-container">
+                                    <div class="question">
+                                        <p class="mb-2">1. عين نائب الفاعل في الجملة الآتية:</p>
+                                        <p>يُحترَم المعلمُ في المجتمع.</p>
+                                        <textarea class="w-full p-2 border border-gray-300 rounded mt-2" rows="2"></textarea>
+                                    </div>
+                                    
+                                    <div class="question">
+                                        <p class="mb-2">2. أكمل بنائب فاعل مناسب:</p>
+                                        <p>يُكرَّم ______ في الحفل.</p>
+                                        <textarea class="w-full p-2 border border-gray-300 rounded mt-2" rows="2"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Continue with other grammar sections -->
+                    <div class="mb-4">
+                        <div class="accordion-header bg-gray-100 p-3 rounded cursor-pointer flex justify-between items-center" onclick="toggleAccordion(this)">
+                            <h4 class="font-bold">4. الأفعال التي تنصب مفعولين أصلهما المبتدأ والخبر</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content hidden p-4 border border-gray-200 rounded-b">
+                            <p class="mb-4"><strong>شرح الدرس:</strong></p>
+                            <p class="mb-4">هي مجموعة من الأفعال التي تدخل على الجملة الاسمية (المبتدأ والخبر) فتنصبهما مفعولين، وتنقسم إلى:</p>
+                            
+                            <ol class="list-decimal list-inside mb-4">
+                                <li class="mb-2"><strong>أفعال الرجحان (الشك):</strong> ظنَّ - حسِبَ - زعمَ - خالَ</li>
+                                <li class="mb-2"><strong>أفعال اليقين:</strong> علِمَ - وجدَ - رأى</li>
+                                <li><strong>أفعال التحويل:</strong> جَعَلَ</li>
+                            </ol>
+                            
+                            <p class="mb-4"><strong>عند دخول هذه الأفعال على الجملة الاسمية:</strong></p>
+                            <ul class="list-disc list-inside mb-4">
+                                <li>يتحول المبتدأ إلى مفعول به أول منصوب.</li>
+                                <li>يتحول الخبر إلى مفعول به ثانٍ منصوب.</li>
+                            </ul>
+                            
+                            <p class="mb-4"><strong>أمثلة:</strong></p>
+                            <ul class="list-disc list-inside mb-4">
+                                <li>الجملة الاسمية: الجوُّ معتدلٌ.</li>
+                                <li>بعد دخول فعل الرجحان: ظننتُ الجوَّ معتدلاً.</li>
+                                <li>بعد دخول فعل اليقين: علمتُ الحقَّ واضحاً.</li>
+                            </ul>
+                            
+                            <button class="button-primary mt-4" onclick="openFullscreen('افعال-مفعولين-fullscreen')">عرض على كامل الشاشة</button>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <div class="accordion-header bg-gray-100 p-3 rounded cursor-pointer flex justify-between items-center" onclick="toggleAccordion(this)">
+                            <h4 class="font-bold">5. الأفعال التي تنصب مفعولين ليس أصلهما المبتدأ والخبر</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content hidden p-4 border border-gray-200 rounded-b">
+                            <p class="mb-4"><strong>شرح الدرس:</strong></p>
+                            <p class="mb-4">هي مجموعة من الأفعال التي تتعدى إلى مفعولين، لكن هذين المفعولين لا يمكن أن يكونا مبتدأ وخبر في الأصل. وتشمل هذه الأفعال:</p>
+                            
+                            <p class="mb-4">أعطى - وهب - منح - منع - سلب - حرم - كسى - ألبس - سأل</p>
+                            
+                            <p class="mb-4">الفرق الأساسي بين هذه الأفعال وأفعال ظن وأخواتها أنه عند حذف الفعل والفاعل من الجملة، لا تصبح الجملة المتبقية جملة اسمية مستقلة ذات معنى.</p>
+                            
+                            <p class="mb-4"><strong>أمثلة:</strong></p>
+                            <ul class="list-disc list-inside mb-4">
+                                <li>أعطى المعلمُ التلميذَ جائزةً.</li>
+                                <li>وهب اللهُ الإنسانَ عقلاً.</li>
+                                <li>منح الرئيسُ العالمَ وساماً.</li>
+                                <li>سأل الولدُ أباهُ مالاً.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <div class="accordion-header bg-gray-100 p-3 rounded cursor-pointer flex justify-between items-center" onclick="toggleAccordion(this)">
+                            <h4 class="font-bold">6. علامات الترقيم</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content hidden p-4 border border-gray-200 rounded-b">
+                            <p class="mb-4"><strong>شرح الدرس:</strong></p>
+                            <p class="mb-4">علامات الترقيم هي رموز اصطلاحية توضع بين الكلمات أو الجمل لتحديد مواقع الفصل والوقف والابتداء، مما يساعد على فهم النص وقراءته بشكل صحيح.</p>
+                            
+                            <p class="mb-4"><strong>أهم علامات الترقيم:</strong></p>
+                            <ul class="list-disc list-inside mb-4">
+                                <li>النقطة (.): توضع في نهاية الجملة التامة المعنى.</li>
+                                <li>الفاصلة (،): تستخدم للفصل بين جملتين مترابطتين، أو بين المفردات المتعاطفة، أو بعد المنادى.</li>
+                                <li>الفاصلة المنقوطة (؛): توضع بين جملتين بينهما علاقة سببية، أو تكون إحداهما سبباً أو نتيجة للأخرى.</li>
+                                <li>النقطتان الرأسيتان (:): تستخدم قبل تقديم الكلام المنقول أو قبل التفصيل والإيضاح.</li>
+                                <li>علامة الاستفهام (؟): توضع في نهاية الجملة الاستفهامية.</li>
+                                <li>علامة التعجب (!): توضع في نهاية الجمل التي تعبر عن الدهشة أو التعجب.</li>
+                                <li>الشرطة أو الشرطتان (- أو --): تستخدم لإضافة عبارات توضيحية أو جانبية.</li>
+                                <li>علامة التنصيص أو الاقتباس (" "): تحيط بالكلام المنقول حرفياً.</li>
+                                <li>القوسان ( ): يحيطان بالمعلومات الإضافية أو التوضيحية.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <div class="accordion-header bg-gray-100 p-3 rounded cursor-pointer flex justify-between items-center" onclick="toggleAccordion(this)">
+                            <h4 class="font-bold">7. الهمزة المتوسطة والمتطرفة والهمزة في أول الكلمة</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content hidden p-4 border border-gray-200 rounded-b">
+                            <p class="mb-4"><strong>شرح الدرس:</strong></p>
+                            
+                            <p class="mb-4"><strong>1. الهمزة في أول الكلمة (همزة القطع وهمزة الوصل):</strong></p>
+                            <ul class="list-disc list-inside mb-4">
+                                <li>همزة القطع: تُنطق وتُكتب في بداية الكلمة وتكون على شكل (أ) أو (إ).</li>
+                                <li>همزة الوصل: تُنطق في بداية الكلام وتسقط في وسط الكلام وتُكتب "ا" بدون رأس الهمزة.</li>
+                            </ul>
+                            
+                            <p class="mb-4"><strong>2. الهمزة المتوسطة:</strong> تُكتب الهمزة المتوسطة على:</p>
+                            <ul class="list-disc list-inside mb-4">
+                                <li>الألف في الحالات التالية:
+                                    <ul class="list-disc list-inside mr-6 mt-2">
+                                        <li>إذا كانت مفتوحة وما قبلها مفتوح: سَأَل.</li>
+                                        <li>إذا كانت مفتوحة وما قبلها ساكن: مسْأَلة.</li>
+                                        <li>إذا كانت ساكنة وما قبلها مفتوح: فأْس.</li>
+                                    </ul>
+                                </li>
+                                <li>الواو إذا كانت مضمومة أو ما قبلها مضموم: مسؤول.</li>
+                                <li>الياء إذا كانت مكسورة أو ما قبلها مكسور: بئر.</li>
+                                <li>السطر إذا كانت ساكنة وما قبلها مكسور أو مضموم: مسئول.</li>
+                            </ul>
+                            
+                            <p class="mb-4"><strong>3. الهمزة المتطرفة (في آخر الكلمة):</strong> تُكتب الهمزة المتطرفة حسب حركة الحرف الذي قبلها:</p>
+                            <ul class="list-disc list-inside mb-4">
+                                <li>على الألف إذا كان ما قبلها مفتوحاً: قرأَ.</li>
+                                <li>على الواو إذا كان ما قبلها مضموماً: تباطؤ.</li>
+                                <li>على الياء إذا كان ما قبلها مكسوراً: قارئ.</li>
+                                <li>على السطر إذا كان ما قبلها ساكناً: دفء.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <div class="accordion-header bg-gray-100 p-3 rounded cursor-pointer flex justify-between items-center" onclick="toggleAccordion(this)">
+                            <h4 class="font-bold">8. الألف اللينة</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content hidden p-4 border border-gray-200 rounded-b">
+                            <p class="mb-4"><strong>شرح الدرس:</strong></p>
+                            <p class="mb-4">الألف اللينة هي ألف ساكنة تأتي في نهاية الكلمة مفتوح ما قبلها، وتكتب إما على شكل ألف قائمة (ا) أو على شكل ياء غير منقوطة (ى).</p>
+                            
+                            <p class="mb-4"><strong>قواعد كتابة الألف اللينة:</strong></p>
+                            
+                            <p class="mb-2"><strong>أولاً: في الأسماء الثلاثية:</strong></p>
+                            <ul class="list-disc list-inside mb-4">
+                                <li>تُكتب الألف قائمة (ا) إذا كان أصل الألف واو: عصا (من عصوت).</li>
+                                <li>تُكتب الألف على صورة ياء (ى) إذا كان أصل الألف ياء: فتى (من فتيت).</li>
+                            </ul>
+                            
+                            <p class="mb-2"><strong>ثانياً: في الأسماء فوق الثلاثية:</strong></p>
+                            <ul class="list-disc list-inside mb-4">
+                                <li>تُكتب الألف على صورة ياء (ى) مطلقاً: مستشفى، ذكرى، مصطفى.</li>
+                            </ul>
+                            
+                            <p class="mb-2"><strong>ثالثاً: في الأفعال الثلاثية:</strong></p>
+                            <ul class="list-disc list-inside mb-4">
+                                <li>تُكتب الألف قائمة (ا) إذا كان أصلها واواً في المضارع: دعا (يدعو).</li>
+                                <li>تُكتب الألف على صورة ياء (ى) إذا كان أصلها ياء في المضارع: رمى (يرمي).</li>
+                            </ul>
+                            
+                            <p class="mb-2"><strong>رابعاً: في الأفعال فوق الثلاثية:</strong></p>
+                            <ul class="list-disc list-inside mb-4">
+                                <li>تُكتب الألف على صورة ياء (ى) مطلقاً: اهتدى، استدعى، اشترى.</li>
+                            </ul>
+                            
+                            <p class="mb-2"><strong>خامساً: حالات خاصة:</strong></p>
+                            <ul class="list-disc list-inside mb-4">
+                                <li>تُكتب الألف قائمة (ا) في الأسماء الأعجمية: أمريكا، فرنسا، إنجلترا.</li>
+                                <li>تُكتب الألف قائمة (ا) في بعض الحروف مثل: ما، لا، إذا، إلا.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Rhetoric Tab -->
+            <div id="rhetoric" class="tab-content content-box">
+                <h3 class="text-xl font-bold mb-4">البلاغة</h3>
+                
+                <div class="mb-6">
+                    <h4 class="font-bold mb-4">الظواهر البلاغية</h4>
+                    
+                    <p class="mb-4"><strong>شرح الدرس:</strong></p>
+                    <p class="mb-4">تشمل الظواهر البلاغية في منهج الصف الأول الإعدادي مجموعة من الفنون البيانية التي تضفي جمالاً على النص وتقويه:</p>
+                    
+                    <div class="mb-4">
+                        <p class="mb-2"><strong>1. التضاد:</strong> هو ذكر الشيء وضده في الكلام، مما يبرز المعنى ويقويه. مثل: (نشيط وكسول، فوق وتحت).</p>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <p class="mb-2"><strong>2. التشبيه:</strong> هو عقد مقارنة بين شيئين يشتركان في صفة، ويتكون من:</p>
+                        <ul class="list-disc list-inside mb-2 mr-6">
+                            <li>المشبه: الشيء المراد تشبيهه.</li>
+                            <li>المشبه به: الشيء الذي يشبه به.</li>
+                            <li>أداة التشبيه: مثل (كـ، مثل، كأن).</li>
+                            <li>وجه الشبه (أحياناً).</li>
+                        </ul>
+                        <p>مثال: الجندي كالأسد في الشجاعة. (المشبه: الجندي، المشبه به: الأسد، أداة التشبيه: كـ، وجه الشبه: الشجاعة).</p>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <p class="mb-2"><strong>3. أسلوب التوكيد:</strong> يستخدم لتقوية المعنى وتأكيده في ذهن السامع، ويكون باستخدام:</p>
+                        <ul class="list-disc list-inside mb-2 mr-6">
+                            <li>أدوات التوكيد مثل: إن، قد، نون التوكيد.</li>
+                            <li>التكرار: تكرار الكلمة أو الجملة.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <p class="mb-2"><strong>4. الأسلوب الخبري والإنشائي:</strong></p>
+                        <ul class="list-disc list-inside mb-2 mr-6">
+                            <li>الأسلوب الخبري: يقدم معلومة يمكن الحكم عليها بالصدق أو الكذب.</li>
+                            <li>الأسلوب الإنشائي: لا يحتمل الصدق أو الكذب، ويشمل:
+                                <ul class="list-disc list-inside mr-6 mt-2">
+                                    <li>الأمر: افعل، اكتب.</li>
+                                    <li>النهي: لا تفعل.</li>
+                                    <li>الاستفهام: هل، من، كيف.</li>
+                                    <li>التعجب: ما أجمل!</li>
+                                    <li>النداء: يا، أيها.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <p class="mb-2"><strong>5. العلاقة بين الجمل:</strong> تربط العلاقات بين الجمل باستخدام أدوات الربط المختلفة:</p>
+                        <ul class="list-disc list-inside mb-2 mr-6">
+                            <li>التعليل: لأن، بسبب.</li>
+                            <li>النتيجة: لذلك، وبالتالي.</li>
+                            <li>التتابع الزمني: ثم، بعد ذلك.</li>
+                            <li>التفصيل: مثل، على سبيل المثال.</li>
+                            <li>الإجمال: باختصار، بإيجاز.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <p class="mb-2"><strong>6. الموسيقى الداخلية والخارجية:</strong></p>
+                        <ul class="list-disc list-inside mb-2 mr-6">
+                            <li>الداخلية: تنتج من تكرار الحروف والكلمات داخل النص.</li>
+                            <li>الخارجية: تنتج من توافق القوافي والأوزان.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mt-6">
+                        <h5 class="font-bold mb-2">أهم الأسئلة:</h5>
+                        <div class="quiz-container">
+                            <div class="question">
+                                <p class="mb-2">1. استخرج التضاد مما يلي:</p>
+                                <p>"إن مع العسر يسراً".</p>
+                                <textarea class="w-full p-2 border border-gray-300 rounded mt-2" rows="2"></textarea>
+                            </div>
+                            
+                            <div class="question">
+                                <p class="mb-2">2. حدد أركان التشبيه في الجملة الآتية:</p>
+                                <p>العلم كالنور في الهداية.</p>
+                                <textarea class="w-full p-2 border border-gray-300 rounded mt-2" rows="2"></textarea>
+                            </div>
+                            
+                            <div class="question">
+                                <p class="mb-2">3. ميز بين الأسلوب الخبري والإنشائي فيما يأتي:</p>
+                                <ol class="list-decimal list-inside mb-2 mr-6">
+                                    <li>ما أجمل الربيع!</li>
+                                    <li>الصدق منجاة.</li>
+                                    <li>هل تحب القراءة؟</li>
+                                </ol>
+                                <textarea class="w-full p-2 border border-gray-300 rounded mt-2" rows="4"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Expressions Tab -->
+            <div id="expressions" class="tab-content content-box">
+                <h3 class="text-xl font-bold mb-4">التعبيرات</h3>
+                
+                <div class="mb-6">
+                    <h4 class="font-bold mb-4">التعبيرات المهمة في المنهج</h4>
+                    
+                    <div class="mb-4">
+                        <p class="mb-2"><strong>تعبيرات وصفية:</strong></p>
+                        <ul class="list-disc list-inside mb-2 mr-6">
+                            <li>وصف الطبيعة: مثل "الطبيعة خلابة بألوانها الزاهية".</li>
+                            <li>وصف الشخصيات: مثل "المعلم ذو خبرة واسعة وعلم غزير".</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <p class="mb-2"><strong>تعبيرات حول العلم والتعلم:</strong></p>
+                        <ul class="list-disc list-inside mb-2 mr-6">
+                            <li>"العلم نور والجهل ظلام"</li>
+                            <li>"المعرفة كنز لا يفنى"</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <p class="mb-2"><strong>تعبيرات حول القيم والأخلاق:</strong></p>
+                        <ul class="list-disc list-inside mb-2 mr-6">
+                            <li>"الصدق فضيلة"</li>
+                            <li>"الأمانة أساس المعاملات"</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <p class="mb-2"><strong>تعبيرات حول الوطن:</strong></p>
+                        <ul class="list-disc list-inside mb-2 mr-6">
+                            <li>"الوطن يسكن القلب"</li>
+                            <li>"خدمة الوطن واجب على كل مواطن"</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <p class="mb-2"><strong>تعبيرات عن الحضارة:</strong></p>
+                        <ul class="list-disc list-inside mb-2 mr-6">
+                            <li>"الحضارة ثمرة التعاون بين الشعوب"</li>
+                            <li>"مصر مهد الحضارة"</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <p class="mb-2"><strong>تصنيف التعبيرات حسب الغرض:</strong></p>
+                        
+                        <p class="mb-2 mt-4"><strong>تعبيرات للحث والتشجيع:</strong></p>
+                        <ul class="list-disc list-inside mb-2 mr-6">
+                            <li>"اجتهد في دراستك لتحقق النجاح"</li>
+                            <li>"استثمر وقتك فيما يفيد"</li>
+                        </ul>
+                        
+                        <p class="mb-2 mt-4"><strong>تعبيرات للتحذير:</strong></p>
+                        <ul class="list-disc list-inside mb-2 mr-6">
+                            <li>"احذر رفقاء السوء"</li>
+                            <li>"لا تؤجل عمل اليوم إلى الغد"</li>
+                        </ul>
+                        
+                        <p class="mb-2 mt-4"><strong>تعبيرات للتعجب والإعجاب:</strong></p>
+                        <ul class="list-disc list-inside mb-2 mr-6">
+                            <li>"ما أروع الإخلاص في العمل!"</li>
+                            <li>"ما أجمل الطبيعة في الربيع!"</li>
+                        </ul>
+                        
+                        <p class="mb-2 mt-4"><strong>تعبيرات للنصح والإرشاد:</strong></p>
+                        <ul class="list-disc list-inside mb-2 mr-6">
+                            <li>"عليك بالصبر في طلب العلم"</li>
+                            <li>"احرص على مصاحبة الأخيار"</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Vocabulary Tab -->
+            <div id="vocabulary" class="tab-content content-box">
+                <h3 class="text-xl font-bold mb-4">المعاني والمفردات والمضادات</h3>
+                
+                <div class="mb-6">
+                    <h4 class="font-bold mb-4">جدول المعاني والمفردات والمضادات المهمة:</h4>
+                    
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>الكلمة</th>
+                                    <th>المعنى</th>
+                                    <th>المضاد (إن وُجد)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>جدباء</td>
+                                    <td>قاحلة، غير صالحة للزراعة</td>
+                                    <td>خصبة</td>
+                                </tr>
+                                <tr>
+                                    <td>عزم</td>
+                                    <td>إرادة وتصميم</td>
+                                    <td>تردد</td>
+                                </tr>
+                                <tr>
+                                    <td>إبداع</td>
+                                    <td>ابتكار</td>
+                                    <td>تقليد</td>
+                                </tr>
+                                <tr>
+                                    <td>طموح</td>
+                                    <td>تطلع إلى المعالي</td>
+                                    <td>قنوع</td>
+                                </tr>
+                                <tr>
+                                    <td>حضارة</td>
+                                    <td>تقدم وتطور</td>
+                                    <td>تخلف</td>
+                                </tr>
+                                <tr>
+                                    <td>نشيط</td>
+                                    <td>همته عالية في العمل</td>
+                                    <td>كسول</td>
+                                </tr>
+                                <tr>
+                                    <td>تفاني</td>
+                                    <td>إخلاص</td>
+                                    <td>إهمال</td>
+                                </tr>
+                                <tr>
+                                    <td>معتدل</td>
+                                    <td>متوازن</td>
+                                    <td>متطرف</td>
+                                </tr>
+                                <tr>
+                                    <td>موهبة</td>
+                                    <td>قدرة فطرية</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>ريادة</td>
+                                    <td>قيادة وتقدم</td>
+                                    <td>تبعية</td>
+                                </tr>
+                                <tr>
+                                    <td>تراث</td>
+                                    <td>ما خلفه الأقدمون</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>مهارة</td>
+                                    <td>براعة وإتقان</td>
+                                    <td>خرق</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Test Yourself Section -->
+    <section id="exercises" class="container mx-auto px-4 py-8">
+        <h2 class="section-title text-2xl md:text-3xl text-center mb-8">اختبر نفسك</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="content-box">
+                <h3 class="text-xl font-bold mb-4">اختبارات النحو</h3>
+                <p class="mb-4">جرب معلوماتك في قواعد النحو العربي من خلال مجموعة متنوعة من الاختبارات</p>
+                <a href="#" class="button-primary inline-block mt-2">ابدأ الاختبار</a>
+            </div>
+            
+            <div class="content-box">
+                <h3 class="text-xl font-bold mb-4">اختبارات البلاغة</h3>
+                <p class="mb-4">اختبر فهمك للظواهر البلاغية وأنواع الأساليب البلاغية المختلفة</p>
+                <a href="#" class="button-primary inline-block mt-2">ابدأ الاختبار</a>
+            </div>
+            
+            <div class="content-box">
+                <h3 class="text-xl font-bold mb-4">تدريبات على الإملاء</h3>
+                <p class="mb-4">تدرب على قواعد الإملاء والهمزات والألف اللينة بطريقة تفاعلية</p>
+                <a href="#" class="button-primary inline-block mt-2">ابدأ التدريب</a>
+            </div>
+            
+            <div class="content-box">
+                <h3 class="text-xl font-bold mb-4">اختبارات شاملة</h3>
+                <p class="mb-4">اختبارات تشمل جميع فروع اللغة العربية لتقييم مستواك بشكل كامل</p>
+                <a href="#" class="button-primary inline-block mt-2">ابدأ الاختبار</a>
+            </div>
+        </div>
+        
+        <div class="content-box mt-8">
+            <h3 class="text-xl font-bold mb-4">روابط لمذكرات أخرى</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <a href="#" class="p-4 bg-gray-100 rounded hover:bg-gray-200 transition-colors text-center">مذكرة شاملة لمادة اللغة العربية</a>
+                <a href="#" class="p-4 bg-gray-100 rounded hover:bg-gray-200 transition-colors text-center">بنك أسئلة للصف الأول الإعدادي</a>
+                <a href="#" class="p-4 bg-gray-100 rounded hover:bg-gray-200 transition-colors text-center">نماذج امتحانات مجابة</a>
+                <a href="#" class="p-4 bg-gray-100 rounded hover:bg-gray-200 transition-colors text-center">اختبارات تفاعلية متنوعة</a>
+                <a href="#" class="p-4 bg-gray-100 rounded hover:bg-gray-200 transition-colors text-center">ملخصات مهمة للمنهج</a>
+                <a href="#" class="p-4 bg-gray-100 rounded hover:bg-gray-200 transition-colors text-center">قصص ونصوص إضافية</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Video Recommendations -->
+    <section class="container mx-auto px-4 py-8">
+        <h2 class="section-title text-2xl md:text-3xl text-center mb-8">فيديوهات مُوصى بها</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="content-box">
+                <h3 class="text-xl font-bold mb-4">النحو العربي</h3>
+                <div class="bg-gray-200 h-48 mb-2 flex items-center justify-center">
+                    <i class="fas fa-play-circle text-4xl text-gray-500"></i>
+                </div>
+                <p>شرح مفصل لقواعد النحو للصف الأول الإعدادي</p>
+                <a href="#" class="text-accent-color hover:underline mt-2 inline-block">مشاهدة الفيديو</a>
+            </div>
+            
+            <div class="content-box">
+                <h3 class="text-xl font-bold mb-4">البلاغة العربية</h3>
+                <div class="bg-gray-200 h-48 mb-2 flex items-center justify-center">
+                    <i class="fas fa-play-circle text-4xl text-gray-500"></i>
+                </div>
+                <p>الظواهر البلاغية وتطبيقاتها في النصوص الأدبية</p>
+                <a href="#" class="text-accent-color hover:underline mt-2 inline-block">مشاهدة الفيديو</a>
+            </div>
+            
+            <div class="content-box">
+                <h3 class="text-xl font-bold mb-4">قواعد الإملاء</h3>
+                <div class="bg-gray-200 h-48 mb-2 flex items-center justify-center">
+                    <i class="fas fa-play-circle text-4xl text-gray-500"></i>
+                </div>
+                <p>شرح قواعد كتابة الهمزات والألف اللينة بطريقة مبسطة</p>
+                <a href="#" class="text-accent-color hover:underline mt-2 inline-block">مشاهدة الفيديو</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer py-8">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <p>© 2025 جميع الحقوق محفوظة - منهج اللغة العربية للصف الأول الإعدادي</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Fullscreen Modals -->
+    <div id="نعت-fullscreen" class="fullscreen-modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeFullscreen('نعت-fullscreen')">&times;</span>
+            <h2 class="text-2xl font-bold mb-4">النعت</h2>
+            <div class="mb-4">
+                <p class="mb-4"><strong>شرح الدرس:</strong></p>
+                <p class="mb-4">النعت (أو الصفة) هو أحد التوابع في علم النحو في اللغة العربية، ويُقصد بالتوابع هي الأسماء التي تتبع ما يأتي قبلها في الإعراب. يأتي النعت في الجملة لبيان صفة في المنعوت (الموصوف).</p>
+                
+                <p class="mb-4"><strong>أنواع النعت:</strong></p>
+                <ul class="list-disc list-inside mb-4">
+                    <li>النعت المفرد: وهو ما ليس جملة ولا شبه جملة، بل هو كلمة واحدة تصف المنعوت الذي يسبقها.</li>
+                </ul>
+                
+                <p class="mb-4"><strong>شروط المطابقة بين النعت والمنعوت:</strong> عندما يكون الحديث عن العاقل، يجب أن تتوافر أربعة شروط:</p>
+                <ul class="list-disc list-inside mb-4">
+                    <li>التعريف أو التنكير</li>
+                    <li>النوع (مذكر أو مؤنث)</li>
+                    <li>العدد (مفرد - مثنى - جمع)</li>
+                    <li>الإعراب (رفع - نصب - جر)</li>
+                </ul>
+                
+                <p class="mb-4"><strong>أما في حالة غير العاقل، فيكفي التطابق في التعريف أو التنكير والإعراب.</strong></p>
+                
+                <p class="mb-4"><strong>أمثلة:</strong></p>
+                <ul class="list-disc list-inside mb-4">
+                    <li>الرجلُ المهذبُ تقيٌ. (النعت: المهذب)</li>
+                    <li>رأيتُ رجلاً معطاءً كريماً. (النعت: معطاء، كريماً)</li>
+                    <li>المرأةُ الكريمةُ تقيةٌ. (النعت: الكريمة)</li>
+                    <li>رأيتُ امرأةً طيبةً رحيمةً. (النعت: طيبة، رحيمة)</li>
+                    <li>رأيتُ الجنديَ الشجاعَ. (النعت: الشجاع)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="فعل-fullscreen" class="fullscreen-modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeFullscreen('فعل-fullscreen')">&times;</span>
+            <h2 class="text-2xl font-bold mb-4">الفعل المبني للمعلوم والفعل المبني للمجهول</h2>
+            <!-- Content here -->
+        </div>
+    </div>
+    
+    <div id="نائب-fullscreen" class="fullscreen-modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeFullscreen('نائب-fullscreen')">&times;</span>
+            <h2 class="text-2xl font-bold mb-4">نائب الفاعل</h2>
+            <!-- Content here -->
+        </div>
+    </div>
+    
+    <div id="افعال-مفعولين-fullscreen" class="fullscreen-modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeFullscreen('افعال-مفعولين-fullscreen')">&times;</span>
+            <h2 class="text-2xl font-bold mb-4">الأفعال التي تنصب مفعولين</h2>
+            <!-- Content here -->
+        </div>
+    </div>
+    
+    <script>
+        // Toggle accordion
+        function toggleAccordion(element) {
+            const content = element.nextElementSibling;
+            const icon = element.querySelector('i');
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.classList.remove('fa-chevron-down');
+                icon.classList.add('fa-chevron-up');
+            } else {
+                content.classList.add('hidden');
+                icon.classList.remove('fa-chevron-up');
+                icon.classList.add('fa-chevron-down');
+            }
+        }
+        
+        // Tab functionality
+        function openTab(evt, tabName) {
+            const tabContents = document.getElementsByClassName("tab-content");
+            for (let i = 0; i < tabContents.length; i++) {
+                tabContents[i].classList.remove("active");
+            }
+            
+            const tabButtons = document.getElementsByClassName("tab-button");
+            for (let i = 0; i < tabButtons.length; i++) {
+                tabButtons[i].classList.remove("active");
+            }
+            
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+        
+        // Fullscreen functionality
+        function openFullscreen(modalId) {
+            document.getElementById(modalId).style.display = "block";
+            document.body.style.overflow = "hidden";
+        }
+        
+        function closeFullscreen(modalId) {
+            document.getElementById(modalId).style.display = "none";
+            document.body.style.overflow = "auto";
+        }
+        
+        // Close modal when clicking outside of it
+        window.onclick = function(event) {
+            const modals = document.getElementsByClassName("fullscreen-modal");
+            for (let i = 0; i < modals.length; i++) {
+                if (event.target == modals[i]) {
+                    modals[i].style.display = "none";
+                    document.body.style.overflow = "auto";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+        
